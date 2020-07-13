@@ -1,36 +1,30 @@
 module.exports = {
-  env: {
-    browser: true,
-    es6: true,
-    'jest/globals': true
-
+  'env': {
+    'browser': true,
+    'es2020': true,
+    'jest/globals': true,
   },
-  extends: [
+  'extends': [
     'plugin:react/recommended',
-    'standard'
   ],
-  globals: {
-    Atomics: 'readonly',
-    SharedArrayBuffer: 'readonly'
-  },
-  parser: '@typescript-eslint/parser',
-  parserOptions: {
-    ecmaFeatures: {
-      jsx: true
+  'parser': '@typescript-eslint/parser',
+  'parserOptions': {
+    'ecmaFeatures': {
+      'jsx': true,
     },
-    ecmaVersion: 2018,
-    sourceType: 'module'
+    'ecmaVersion': 11,
+    'sourceType': 'module',
   },
-  plugins: [
+  'plugins': [
     'react',
     '@typescript-eslint',
-    'jest'
+    'jest',
   ],
-  rules: {
+  'rules': {
   },
-  settings: {
-    react: {
-      version: 'detect'
-    }
-  }
-}
+  'settings': {
+    'react': {
+      'version': 'detect',
+    },
+  },
+};
